@@ -7,7 +7,17 @@
   align-items: center;
   background-color: rgb(214, 214, 214);  
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
- 
+
+  @media screen and (min-width: 200px) and (max-width: 881px) {
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0;
+    border-radius: 0;
+    height: 100vh;
+    background-color: rgb(214, 229, 230); 
+  }
+   
   & hr{
     color: lightblue;
   }
@@ -21,6 +31,14 @@
   background-color: white;
   border-radius: 20px;
   overflow:hidden; 
+  @media screen and (min-width: 200px) and (max-width: 881px) {
+    // border: 2px solid green;
+    width: 98%;
+    margin: 0px auto;
+   
+    height: 60vh;
+    border-radius: 10px;
+  }
   & .form{
     // border: 1px solid gray;
     margin-top: 10px;
@@ -73,6 +91,17 @@
       }
     }
   }
+}
+@media screen and (min-width: 200px) and (max-width: 881px) {
+#img_container{
+  // border: 1px solid gray;
+  width: 100%;
+  margin: 10px auto;
+  margin-left: 0 !important;
+  padding: 0!important;
+  display: flex;
+  align-items: center;
+}
 }
 }
 
