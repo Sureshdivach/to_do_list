@@ -1,0 +1,80 @@
+.App {
+  // border: 1px solid gray;
+  width: 50%;
+  margin: 70px auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(214, 214, 214);  
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+ 
+  & hr{
+    color: lightblue;
+  }
+& .todo_container{
+  width: 45%;
+ height:40vh;
+  margin: 60px 30px;
+  box-shadow: rgba(128, 128, 128, 0.2) 0px 2px 8px 0px;
+  text-align: center;
+  padding: 12px;
+  background-color: white;
+  border-radius: 20px;
+  overflow:hidden; 
+  & .form{
+    // border: 1px solid gray;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    & input{
+      border:1px solid rgb(160, 193, 204);
+      width: 60%;
+      border-radius: 6px;
+      &:focus{
+        outline: none;
+      }
+    }
+    & button{
+      border:none;
+      background-color: rgb(187, 240, 187);
+      padding: 5px 8px;
+      border-radius: 6px;
+      &:hover{
+        background-color: lightgreen;
+      }
+    }  
+  }
+  & .todolist{
+    width: 100%;
+    margin: 20px auto;
+    overflow: auto;
+    height: 30vh;   
+    scrollbar-width: none;
+    & li{
+      width: 90%;
+      border-bottom: 1px solid rgb(232, 243, 247);
+      display: flex;      
+      justify-content: space-between;
+      padding: 5px;
+      margin-top: 10px auto;
+      align-items: center;
+      // overflow: auto;
+      // scrollbar-width: none;
+      
+    }   
+    & button{
+      border:none;
+      text-align: right;
+      background-color: rgb(255, 233, 233);
+      padding: 5px 8px;
+      border-radius: 6px;
+      &:hover{
+        background-color: rgb(253, 193, 191);
+      }
+    }
+  }
+}
+}
+
+
+
